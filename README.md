@@ -36,7 +36,7 @@ Add this MCP server to your Cursor configuration file (`~/.cursor/mcp.json`):
   "mcpServers": {
     "noves-blockchain": {
       "command": "npx",
-      "args": ["@noves/noves-mcp-server@0.1.0"]
+      "args": ["@noves/noves-mcp-server@1.0.0"]
     }
   }
 }
@@ -49,13 +49,9 @@ Add this MCP server to your Cursor configuration file (`~/.cursor/mcp.json`):
 ```json
 {
   "mcpServers": {
-    "browser-tools": {
-      "command": "npx",
-      "args": ["@agentdeskai/browser-tools-mcp@1.1.0"]
-    },
     "noves-blockchain": {
       "command": "npx",
-      "args": ["@noves/noves-mcp-server@0.1.0"]
+      "args": ["@noves/noves-mcp-server@1.0.0"]
     }
   }
 }
@@ -114,57 +110,6 @@ The server supports **100+ blockchain networks** that Noves supports, including:
 
 And many more! Just use the network name as specified by Noves.
 
-## 🔧 Development & Local Testing
-
-### For Contributors
-
-1. **Clone the repository:**
-
-```bash
-git clone <repository-url>
-cd noves-mcp-server
-```
-
-2. **Install dependencies:**
-
-```bash
-npm install
-```
-
-3. **Build the project:**
-
-```bash
-npm run build
-```
-
-4. **Test locally:**
-
-```bash
-npm start
-```
-
-### Development Commands
-
-- `npm run build` - Build TypeScript
-- `npm run start` - Run compiled server
-- `npm run dev` - Run with ts-node for development
-- `npm run prepare` - Prepare for publishing
-
-## 📦 Publishing Updates
-
-For maintainers updating the package:
-
-1. **Make your changes**
-2. **Update version in `package.json`**
-3. **Build and publish:**
-
-```bash
-npm run build
-npm publish
-```
-
-4. **Users can update by changing the version in their Cursor config**
-
 ## ❓ Troubleshooting
 
 ### MCP Server Shows "0 tools enabled"
@@ -182,12 +127,3 @@ npm publish
 ## 📄 License
 
 MIT
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 🔗 Related Projects
-
-- [Noves Intent Ethers Provider](https://www.npmjs.com/package/@noves/intent-ethers-provider) - The underlying library
-- [Model Context Protocol](https://github.com/modelcontextprotocol) - The MCP standard
