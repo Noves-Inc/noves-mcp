@@ -1,6 +1,6 @@
 {
   "name": "@noves/noves-mcp-server",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "MCP server that wraps Noves Intent service for natural language blockchain data",
   "type": "module",
   "main": "dist/index.js",
