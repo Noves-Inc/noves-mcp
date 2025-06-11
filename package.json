@@ -1,0 +1,35 @@
+{
+  "name": "@noves/noves-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server that wraps Noves Intent service for natural language blockchain data",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "noves-mcp": "dist/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "node dist/index.js",
+    "mcp": "node dist/index.js",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["mcp", "blockchain", "noves", "intent", "web3"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "@noves/intent-ethers-provider": "^0.1.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  }
+} 
