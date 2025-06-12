@@ -25,6 +25,12 @@ An MCP (Model Context Protocol) server that wraps the Noves Intent service to pr
 5. **`get_wallet_summary`**: Get a comprehensive summary of wallet activity with key insights
 6. **`analyze_wallet`**: Analyze wallet activity and provide detailed insights with natural language summaries
 
+### 💸 **Token Price Tools**
+
+7. **`get_current_token_price`**: Get the current price of a token on a specific blockchain.
+8. **`get_historical_token_price`**: Get the historical price of a token at a specific timestamp.
+9. **`get_token_price_comparison`**: Compare a token's price between two timestamps and see the price change.
+
 ## 🚀 Quick Start
 
 ### Installation for Cursor/Claude
@@ -34,9 +40,9 @@ Add this MCP server to your Cursor configuration file (`~/.cursor/mcp.json`):
 ```json
 {
   "mcpServers": {
-    "noves-blockchain": {
+    "noves-blockchain-data": {
       "command": "npx",
-      "args": ["@noves/noves-mcp-server@0.1.0"]
+      "args": ["@noves/noves-mcp-server@0.1.1"]
     }
   }
 }
@@ -49,9 +55,9 @@ Add this MCP server to your Cursor configuration file (`~/.cursor/mcp.json`):
 ```json
 {
   "mcpServers": {
-    "noves-blockchain": {
+    "noves-blockchain-data": {
       "command": "npx",
-      "args": ["@noves/noves-mcp-server@0.1.0"]
+      "args": ["@noves/noves-mcp-server@0.1.1"]
     }
   }
 }
