@@ -13,16 +13,32 @@ export interface TransactionData {
 }
 
 export interface TokenPriceData {
-  price: {
-    amount: string;
-    currency: string;
-  };
+  chain: string;
+  block: string;
   token: {
     address: string;
     symbol?: string;
     name?: string;
   };
-  chain: string;
+  price: {
+    amount: string;
+    currency: string;
+    status: string;
+  };
+  pricedBy?: {
+    poolAddress?: string;
+    exchange?: {
+      name: string;
+    };
+    liquidity?: number;
+    baseToken?: {
+      address: string;
+      symbol: string;
+      name: string;
+    };
+  };
+  priceType: string;
+  priceStatus: string;
   timestamp?: string;
 }
 
