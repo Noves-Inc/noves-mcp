@@ -42,7 +42,7 @@ Add this MCP server to your Cursor configuration file (`~/.cursor/mcp.json`):
   "mcpServers": {
     "noves-blockchain-data": {
       "command": "npx",
-      "args": ["@noves/noves-mcp-server@0.1.2"]
+      "args": ["@noves/noves-mcp-server@0.1.3"]
     }
   }
 }
@@ -57,7 +57,7 @@ Add this MCP server to your Cursor configuration file (`~/.cursor/mcp.json`):
   "mcpServers": {
     "noves-blockchain-data": {
       "command": "npx",
-      "args": ["@noves/noves-mcp-server@0.1.2"]
+      "args": ["@noves/noves-mcp-server@0.1.3"]
     }
   }
 }
